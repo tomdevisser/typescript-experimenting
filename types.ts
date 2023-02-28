@@ -43,7 +43,22 @@ const printName = (person: { name: string }): void => {
 }
 
 // Typing an object.
-let coordinates: { x: number; y: number } = {
+// let coordinates: { x: number; y: number } = {
+//   x: 10,
+//   y: 20,
+// };
+
+// Typing an object with an interface.
+type Coordinates = {
+  x: number;
+  y: number;
+}
+
+let coordinates: Coordinates = {
   x: 10,
   y: 20,
 };
+
+const getCoordinates = (x: number, y: number): Coordinates => {
+  return { x, y };
+}
