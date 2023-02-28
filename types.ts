@@ -52,6 +52,7 @@ const printName = (person: { name: string }): void => {
 type Coordinates = {
   x: number;
   y: number;
+  z?: number; // Optional property.
 }
 
 let coordinates: Coordinates = {
