@@ -22,3 +22,12 @@ square('this'); // Error: Argument of type 'string' is not assignable to paramet
 
 // Adding default values to parameters.
 const sum = (x: number, y: number = 10): number => x + y;
+
+// A function with multiple return types.
+const multipleReturnTypes = (x: number): number | string => {
+  if (x > 10) {
+    return x;
+  } else {
+    return "Less than 10";
+  }
+}
