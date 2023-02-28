@@ -63,3 +63,9 @@ let coordinates: Coordinates = {
 const getCoordinates = (x: number, y: number): Coordinates => {
   return { x, y };
 }
+
+// Read only properties.
+interface Person {
+  readonly name: string;
+  age: number;
+}
