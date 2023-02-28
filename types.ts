@@ -69,3 +69,19 @@ interface Person {
   readonly name: string;
   age: number;
 }
+
+// Intersect types.
+type Employee = {
+  name: string;
+  salary: number;
+}
+
+type EmployeePerson = Person & Employee;
+
+const employee: EmployeePerson = {
+  name: "John",
+  age: 30,
+  salary: 100000,
+};
+
+employee.name = "Tom"; // Can still change the name property, even though it's read only on Person.
