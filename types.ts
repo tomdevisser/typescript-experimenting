@@ -17,3 +17,8 @@ let futureBoss: string; // This fixed delayed initialization errors.
 function square(x: number): number {
   return x * x;
 }
+
+square('this'); // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
+
+// Adding default values to parameters.
+const sum = (x: number, y: number = 10): number => x + y;
