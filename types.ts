@@ -32,6 +32,18 @@ const multipleReturnTypes = (x: number): number | string => {
   }
 };
 
+// A function that returns nothing.
 const nonPureFunction = (x: number): void => {
   console.log(x);
+};
+
+// Typing objects as a parameter.
+const printName = (person: { name: string }): void => {
+  console.log(person.name);
+}
+
+// Typing an object.
+let coordinates: { x: number; y: number } = {
+  x: 10,
+  y: 20,
 };
